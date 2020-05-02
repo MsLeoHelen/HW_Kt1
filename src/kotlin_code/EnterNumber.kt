@@ -14,7 +14,15 @@ fun enterInt(massage: String): Int {
             str!!.all { it.isDigit() || it == '-' } -> {
                 return str!!.toInt()
             }
-            else -> println("Это не число")
+            else -> println("Это не целое число")
         }
+    }
+}
+
+fun checkNumber(num: Int): Int {
+    return when {
+        num > 0 -> 1
+        num < 0 -> -1
+        else -> 0
     }
 }

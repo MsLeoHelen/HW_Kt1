@@ -1,9 +1,18 @@
 package kotlin_code
 
 fun main(){
-    val a: Int = enterInt("Введи сторону a: ")
-    val b: Int = enterInt("Введи сторону b: ")
-    val c: Int = enterInt("Введи сторону c: ")
+    var a: Int
+    do {
+        a = enterInt("Введи сторону a: ")
+    }while (checkNumber(a) == 1)
+    var b: Int
+    do {
+        b = enterInt("Введи сторону b: ")
+    } while (checkNumber(b) == 1)
+    var c: Int
+    do {
+        c = enterInt("Введи сторону c: ")
+    } while (checkNumber(c) == 1)
 
     val maxSide: Int
     val otherSide1: Int

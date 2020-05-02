@@ -8,7 +8,7 @@ class HW_02_02 {
             count *= 2;
             hours += 3;
         }
-        System.out.println("Через 24 часа будет " + count + " амеб.Д");
+        System.out.println("Через 24 часа будет " + count + " амеб.");
     }
 }
 
